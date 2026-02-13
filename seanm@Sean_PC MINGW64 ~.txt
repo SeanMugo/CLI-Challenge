@@ -1,0 +1,190 @@
+seanm@Sean_PC MINGW64 ~
+$ ls
+ AppData/                 Links/                                                                                         NetHood@        Templates@
+'Application Data'@      'Local Settings'@                                                                               OneDrive/       Videos/
+ Contacts/                Music/                                                                                         PrintHood@      ntuser.dat.LOG1
+ Cookies@                'My Documents'@                                                                                 Recent@         ntuser.dat.LOG2
+ Documents/               NTUSER.DAT                                                                                    'Saved Games'/   ntuser.ini
+ Downloads/               NTUSER.DAT{82dc6d70-05ff-11f1-8408-508140b2f51a}.TM.blf                                        Searches/
+ Favorites/               NTUSER.DAT{82dc6d70-05ff-11f1-8408-508140b2f51a}.TMContainer00000000000000000001.regtrans-ms   SendTo@
+ IntelGraphicsProfiles/   NTUSER.DAT{82dc6d70-05ff-11f1-8408-508140b2f51a}.TMContainer00000000000000000002.regtrans-ms  'Start Menu'@
+
+seanm@Sean_PC MINGW64 ~
+$ cd OneDrive
+
+seanm@Sean_PC MINGW64 ~/OneDrive
+$ ls
+'Almacén personal.lnk'*   Attachments/   Desktop/   Documents/  'Getting started with OneDrive.pdf'   Pictures/   desktop.ini
+
+seanm@Sean_PC MINGW64 ~/OneDrive
+$ cd Desktop
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop
+$ ls
+ Assignment/   'Documents - Shortcut.lnk'*  'Opera GX Browser .lnk'*  'Roblox Player.lnk'*        YouTube.lnk*
+ Brave.lnk*     INTRO/                      'Opera GX Browser.lnk'*    Sample/                   'Zoom Workplace.lnk'*
+ CLI_Project/  'Major bag'/                  Portfolio/                Screenshots/               Zoom.lnk*
+ Designing/    'New folder'/                 Random/                  'Sean - Chrome.lnk'*        desktop.ini
+ Discord.lnk*  'New folder (2)'/            'Riot Client.lnk'*        'Visual Studio Code.lnk'*  'self concept.docx'
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop
+$ cd CLI_Project
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project
+$ mkdir cli_challenge
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project
+$ cd cli_challenge
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/cli_challenge
+$ touch file1.txt file2.txt file3.txt
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/cli_challenge
+$ cd ..
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project
+$ mkdir backup
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project
+$ cd cli_challenge
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/cli_challenge
+$ cd ..
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project
+$ cd backup
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/backup
+$ pwd
+/c/Users/seanm/OneDrive/Desktop/CLI_Project/backup
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/backup
+$ cd ..
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project
+$ cd cli_challenge
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/cli_challenge
+$ mv file1.txt ^C
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/cli_challenge
+$ ^C
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/cli_challenge
+$ mv file.txt /c/Users/seanm/OneDrive/Desktop/CLI_Project/backup
+mv: cannot stat 'file.txt': No such file or directory
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/cli_challenge
+$ ^C
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/cli_challenge
+$ ls
+file1.txt  file2.txt  file3.txt
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/cli_challenge
+$ mv file1.txt /c/Users/seanm/OneDrive/Desktop/CLI_Project/backup
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/cli_challenge
+$ mv file2.txt renamed_file.txt
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/cli_challenge
+$ ls
+file3.txt  renamed_file.txt
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/cli_challenge
+$ rm file3.txt
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project/cli_challenge
+$ cd ..
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project
+$ rm -r backup
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project
+$ ls
+cli_challenge/
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project
+$ cd ..
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop
+$ rm -r cli_challenge
+rm: cannot remove 'cli_challenge': No such file or directory
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop
+$ cd CLI_Project
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project
+$ rm -r cli_challenge
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project
+$ ls
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project
+$ echo "# CLI-Challenge" >> README.md
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project
+$ git init
+Initialized empty Git repository in C:/Users/seanm/OneDrive/Desktop/CLI_Project/.git/
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project (master)
+$ ^[[200~git add README.md~
+bash: $'\E[200~git': command not found
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project (master)
+$ git commit -m "Add Cli_challenge"
+[master (root-commit) 66bb131] Add Cli_challenge
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project (master)
+$ git branch -M main
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project (main)
+$ ^[[200~git remote add origin https://github.com/SeanMugo/CLI-Challenge.git
+bash: $'\E[200~git': command not found
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project (main)
+$ git remote add origin https://github.com/SeanMugo/CLI-Challenge.git
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 239 bytes | 79.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/SeanMugo/CLI-Challenge.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project (main)
+$ git remote add origin https://github.com/SeanMugo/CLI-Challenge.git
+error: remote origin already exists.
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project (main)
+$ git branch -M main
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project (main)
+$ git push origin main
+Everything up-to-date
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project (main)
+$ git add .
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project (main)
+$ git commit -m "all changes"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project (main)
+$ git push origin main
+Everything up-to-date
+
+seanm@Sean_PC MINGW64 ~/OneDrive/Desktop/CLI_Project (main)
+$
