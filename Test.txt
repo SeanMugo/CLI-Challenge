@@ -1,4 +1,0 @@
-seanm@Sean_PC MINGW64 ~
-$ ls
-cd OneDrive
-
